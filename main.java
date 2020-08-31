@@ -12,10 +12,10 @@ public class Main{
 	    String name = input.nextLine();
 	    //System.out.println(name);
              
-	    System.out.print("Please input your birthday in the format Month Day, Year");
+	    System.out.print("Please input your birthday in the format Month Day, Year: ");
 	    
 	    String birthdate = input.nextLine();
-	    System.out.print("Please input your class year");
+	    System.out.print("Please input your class year: ");
 
 	    String class_year = input.nextLine();
 
