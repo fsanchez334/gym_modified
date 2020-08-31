@@ -1,3 +1,5 @@
+import java.util*;
+
 public class ID{
      private String name;
      private String birthday;
@@ -18,10 +20,15 @@ public class ID{
      }
 
      public void displayID(){
+
+         String name_header = String.format("Name: %s", name);
+	 String birth_header = String.format("DOB: %s", birthday);
+	 String class_header = String.format("Class Year: %s",year); 
+
 	 System.out.println("---------Student ID---------------");    
-         System.out.println("%s%s","Name: ", name);
-	 System.out.println("%s%s", "DOB: ", birthday);
-	 System.out.println("%s%s", "Class Year:" , year);
+         System.out.println(name_header);
+	 System.out.println(birthday_header);
+	 System.out.println(class_header);
 	 System.out.println("----------------------------------");
      }
 
