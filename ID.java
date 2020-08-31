@@ -18,9 +18,11 @@ public class ID{
      }
 
      public void displayID(){
-         System.out.println(name);
-	 System.out.println(birthday);
-	 System.out.println(year);
+	 System.out.println("---------Student ID---------------");    
+         System.out.println("%s%s","Name: ", name);
+	 System.out.println("%s%s", "DOB: ", birthday);
+	 System.out.println("%s%s", "Class Year:" , year);
+	 System.out.println("----------------------------------");
      }
 
      private double calculateFee(int minutes){
