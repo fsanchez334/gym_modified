@@ -1,4 +1,4 @@
-import java.util*;
+import java.util.*;
 
 public class ID{
      private String name;
@@ -27,7 +27,7 @@ public class ID{
 
 	 System.out.println("---------Student ID---------------");    
          System.out.println(name_header);
-	 System.out.println(birthday_header);
+	 System.out.println(birth_header);
 	 System.out.println(class_header);
 	 System.out.println("----------------------------------");
      }
