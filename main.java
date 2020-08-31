@@ -10,9 +10,17 @@ public class Main{
 	    System.out.print("Please input your name: ");
 
 	    String name = input.nextLine();
-	    System.out.println(name);
+	    //System.out.println(name);
+             
+	    System.out.println("Please input your birthday in the format Month Day, Year");
+	    
+	    String birthdate = input.nextLine();
+	    System.out.println("Please input your class year");
 
+	    String class_year = input.nextLine();
 
+	    ID holder = new ID(name, birthdate, class_year);
+	    holder.displayID(); 
 	}
 	
 }
