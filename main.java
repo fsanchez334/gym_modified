@@ -6,9 +6,14 @@ public class Main{
 
 	public static void main(String[] args){
 	    System.out.println("Hello and welcome to the gym");
-	    ArrayList<Treadmill> available_treads = new ArrayList<>(5);
+	    ArrayList<Treadmill> available_treads = new ArrayList<>();
 
-            addTreadmills(available_treads);
+            for(int i = 0; i < 5; i++){
+	        Treadmill holder = new Treadmill();
+		available_treads.add(holder);
+
+		System.out.println("Treadmill added");
+	    }
 
 
 	    Scanner input = new Scanner(System.in);
@@ -28,15 +33,6 @@ public class Main{
 	    holder.displayID();
 
 
-	}
-
-	public static void addTreadmills(ArrayList arr){
-	
-            for(int i = 0; i < arr.size(); i++){
-	        Treadmill place = new Treadmill();
-		arr.add(place);
-		System.out.println("Treadmill added");
-	    }
 	}
 	
 }
