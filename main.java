@@ -41,28 +41,29 @@ public class Main{
 	}
 
 	private static void makeID(Scanner holder, int x){
-	    
+	    int counter = 0;
 
-	    while(x != 0){
+	    while(counter < x) {
 		
-                System.out.print("Please input your name: ");
+                System.out.println("Please input your name, but dont' add a space - instead, place | : ");
 
-                String name = holder.nextLine();
+                String name = holder.next();
 
-	
-		           
+		String improved = name.replace("|", " ");
 
-                System.out.print("Please input your birthday in the format Month Day, Year: ");
+                System.out.println("Please input your birthday in the format MM/DD/YYYY");
 
-                String birthdate = holder.nextLine();
+                String birthdate = holder.next();
                 System.out.print("Please input your class year: ");
-	        String class_year = holder.nextLine();
+	        String class_year = holder.next();
 
-		ID space = new ID(name, birthdate, class_year);
+		ID space = new ID(improved, birthdate, class_year);
 		space.displayID();
 
 		System.out.println("ID Created");
-		x--;
+
+		counter++;
+	
 
 		
 	}
