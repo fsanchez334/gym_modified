@@ -1,10 +1,15 @@
 import java.util.Scanner;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.*;
 
 public class Main{
 
 	public static void main(String[] args){
 	    System.out.println("Hello and welcome to the gym");
+	    ArrayList<Treadmill> available_treads = new ArrayList<>(5);
+
+            addTreadmills(available_treads);
+
 
 	    Scanner input = new Scanner(System.in);
 	    System.out.print("Please input your name: ");
@@ -20,7 +25,18 @@ public class Main{
 	    String class_year = input.nextLine();
 
 	    ID holder = new ID(name, birthdate, class_year);
-	    holder.displayID(); 
+	    holder.displayID();
+
+
+	}
+
+	public static void addTreadmills(ArrayList arr){
+	
+            for(int i = 0; i < arr.size(); i++){
+	        Treadmill place = new Treadmill();
+		arr.add(place);
+		System.out.println("Treadmill added");
+	    }
 	}
 	
 }
