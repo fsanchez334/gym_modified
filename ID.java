@@ -7,6 +7,7 @@ public class ID{
      private double overdue_cost;
 
      public boolean taken;
+     public Treadmill number;
      
 
 
@@ -16,6 +17,7 @@ public class ID{
 	 year = c;
 	 taken = false;
 	 overdue_cost = 0;
+	 number = new Treadmill();
      
      }
 

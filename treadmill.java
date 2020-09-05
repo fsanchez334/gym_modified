@@ -6,13 +6,11 @@ public class Treadmill{
     private String mode;
     private String availability;
 
-    public ID person;
-
     public Treadmill(){
 	taken = false;
 	mode = "Default";
 	availability = "Available";
-	person = new ID();
+	
     }
 
     public void displayInfo(){
@@ -22,7 +20,7 @@ public class Treadmill{
     }
 
     public String changeAndTake(String name){
-         taken = "true";
+         taken = true;
 	 String status = name + " has taken the treadmill";
 	 return status;
 
