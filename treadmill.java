@@ -23,7 +23,7 @@ public class Treadmill{
     }
 
     public void reserveTreadMill(ArrayList<Treadmill> machines, ID person, int x){
-        machines.get(x).taken = true;
+        machines.get(x-1).taken = true;
 	availability = "Unavailable";
 
 	String name = person.name;
