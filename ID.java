@@ -48,7 +48,7 @@ public class ID{
 	 
      }
 
-     private void displayUsers(ArrayList<ID> users){
+     public static void displayUsers(ArrayList<ID> users){
        Iterator itr = users.iterator();
        while(itr.hasNext()){
            ID placer = (ID) itr.next();
