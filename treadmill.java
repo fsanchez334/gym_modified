@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.ArrayList;
 
 public class Treadmill{
 
@@ -6,11 +7,13 @@ public class Treadmill{
     private String mode;
     private String availability;
 
+    public String name;
+
     public Treadmill(){
 	taken = false;
 	mode = "Default";
 	availability = "Available";
-	
+	name = " ";
     }
 
     public void displayInfo(){
@@ -19,11 +22,14 @@ public class Treadmill{
 	 System.out.println(availability);
     }
 
-    public String changeAndTake(String name){
-         taken = true;
-	 String status = name + " has taken the treadmill";
-	 return status;
+    public void reserveTreadMill(ArrayList<Treadmill> machines, ID person, int x){
+        machines.get(x).taken = true;
+	availability = "Unavailable";
 
+	String name = person.name;
+
+
+    
     }
 
 
