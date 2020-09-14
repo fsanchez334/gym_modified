@@ -9,19 +9,17 @@ public class Main{
 	    ArrayList<Treadmill> available_treads = new ArrayList<>();
 	    ArrayList<ID> visitors = new ArrayList<>();
 
-            for(int i = 0; i < 5; i++){
-	        Treadmill holder = new Treadmill();
-		available_treads.add(holder);
-
-		System.out.println("Treadmill added");
-	    }
-
-
-	    Scanner input = new Scanner(System.in);
+            Scanner input = new Scanner(System.in);
 	    System.out.println("How many people will be attending the gym today?");
 	    int response = input.nextInt();
 
-	    makeID(visitors,input,response); 
+	    for(int i = 0; i < response; i++){
+                Treadmill holder = new Treadmill();
+                available_treads.add(holder);
+            }
+
+	    makeID(visitors,input,response);
+	    ID.displayUsers(visitors);
 	     
 
 
@@ -46,7 +44,6 @@ public class Main{
 
 		ID space = new ID(improved, birthdate, class_year);
 		list.add(space);
-		space.displayID();
 
 		System.out.println("ID Created");
 
