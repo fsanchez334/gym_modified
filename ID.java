@@ -1,13 +1,12 @@
 import java.util.*;
 
 public class ID{
-     private String name;
+     public String name;
      private String birthday;
      private String year;//Class rank has been named 'year', as opposed to 'class' to avoid confusion with the code
      private double overdue_cost;
 
      public boolean taken;
-     public Treadmill number;
      
 
 
@@ -17,7 +16,6 @@ public class ID{
 	 year = c;
 	 taken = false;
 	 overdue_cost = 0;
-	 number = new Treadmill();
      
      }
 
