@@ -20,7 +20,14 @@ public class Main{
 
 	    makeID(visitors,input,response);
 	    ID.displayUsers(visitors);
-	     
+	    
+	    for(int j = 0; j < visitors.size(); j++){
+		 String a = visitors.get(j).name;
+	         System.out.println(a + ", which treadmill would you like to reserve?");
+		 int desired = input.nextInt();
+
+		 available_treads.get(desired).taken = true;
+	    }
 
 
 	}
