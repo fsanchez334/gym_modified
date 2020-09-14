@@ -7,6 +7,7 @@ public class Main{
 	public static void main(String[] args){
 	    System.out.println("Hello and welcome to the gym");
 	    ArrayList<Treadmill> available_treads = new ArrayList<>();
+	    ArrayList<ID> visitors = new ArrayList<>();
 
             for(int i = 0; i < 5; i++){
 	        Treadmill holder = new Treadmill();
@@ -20,28 +21,13 @@ public class Main{
 	    System.out.println("How many people will be attending the gym today?");
 	    int response = input.nextInt();
 
-	    makeID(input,response); 
-	    	/*System.out.print("Please input your name: ");
-
-	    	String name = input.nextLine();
-	    	//System.out.println(name);
-             
-	    	System.out.print("Please input your birthday in the format Month Day, Year: ");
-	    
-	    	String birthdate = input.nextLine();
-	    	System.out.print("Please input your class year: ");
-
-	    	String class_year = input.nextLine();
-
-	    	ID holder = new ID(name, birthdate, class_year);
-	    	holder.displayID();
-
-	    */
+	    makeID(visitors,input,response); 
+	     
 
 
 	}
 
-	private static void makeID(Scanner holder, int x){
+	private static void makeID(ArrayList<ID> list, Scanner holder, int x){
 	    int counter = 0;
 
 	    while(counter < x) {
@@ -59,6 +45,7 @@ public class Main{
 	        String class_year = holder.next();
 
 		ID space = new ID(improved, birthdate, class_year);
+		list.add(space);
 		space.displayID();
 
 		System.out.println("ID Created");
