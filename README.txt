@@ -1,5 +1,5 @@
 Name: Fernando Sanchez 
-Date: September 14, 2020
+Date: August 23, 2020
 
 Purpose: Imagine a gymnasium in which every visitor must sign in and indicate the treadmill the person wants to use. While a piece of paper seems to be the easy way to log that information, it's an obsolete method. Sometimes a person may not even use the treadmill for the full amount of time, or people use a treadmill logged and assigned to another person. In other words, the information on a piece of paper is not amendable or representative of the gym-equipment reservations in real-time. Why continue with this method when a reliable program can give you that information at ease?
 
