@@ -13,7 +13,7 @@ public class Main{
 	    System.out.println("How many people will be attending the gym today?");
 	    int response = input.nextInt();
 
-	    for(int i = 0; i < response; i++){
+	    for(int i = 0; i < response * 2; i++){
                 Treadmill holder = new Treadmill();
                 available_treads.add(holder);
             }
@@ -23,11 +23,24 @@ public class Main{
 	    
 	    for(int j = 0; j < visitors.size(); j++){
 		 String a = visitors.get(j).name;
+		 for(int z = 0; z < available_treads.size(); z++){
+		     available_treads.get(z).displayInfo(z+1); 
+		 }
 	         System.out.println(a + ", which treadmill would you like to reserve?");
 		 int desired = input.nextInt();
 
-		 available_treads.get(desired).taken = true;
+		 Treadmill abc = available_treads.get(desired-1);
+		 abc.reserveTreadMill(a, desired);
+		 
+		 
 	    }
+
+	    for(int a = 0; a < available_treads.size(); a++){
+                     available_treads.get(a).displayInfo(a+1);
+                 }
+
+
+
 
 
 	}
