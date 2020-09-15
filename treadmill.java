@@ -16,17 +16,18 @@ public class Treadmill{
 	name = " ";
     }
 
-    public void displayInfo(){
-         System.out.println("-------TreadMill Information---------");
-	 System.out.println(mode);
+    public void displayInfo(int y){
+         String information  = String.format("TreadMill #%d Information: ", y);
+	 
+	 System.out.print(information);
 	 System.out.println(availability);
     }
 
-    public void reserveTreadMill(ArrayList<Treadmill> machines, ID person, int x){
-        machines.get(x-1).taken = true;
-	availability = "Unavailable";
+    public void reserveTreadMill(String person, int x){
+        this.taken = true;
+	this.availability = "Unavailable";
 
-	String name = person.name;
+	this.name = person;
 
 
     
